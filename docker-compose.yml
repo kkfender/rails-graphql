@@ -1,19 +1,21 @@
 version: "3.9"
+
 services:
   app:
+    platform: linux/amd64
     build:
       context: .
       dockerfile: Dockerfile
-      platform: linux/amd64
     container_name: rails_app
     volumes:
       - .:/app
     ports:
-      - "3000:3000"
+      - "4000:3000"
     depends_on:
       - db
     environment:
       - DATABASE_URL=postgres://postgres:password@db:5432/app_development
+
   db:
     image: postgres:15
     container_name: postgres_db
@@ -22,5 +24,6 @@ services:
       - POSTGRES_PASSWORD=password
     volumes:
       - pgdata:/var/lib/postgresql/data
+
 volumes:
   pgdata:
