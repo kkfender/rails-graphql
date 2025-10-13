@@ -1,0 +1,20 @@
+{
+  "[ruby]": {
+    "editor.defaultFormatter": "Shopify.ruby-lsp"
+  },
+  "rubyLsp.linters": ["rubocop"],
+  "rubyLsp.pullDiagnosticsOn": "both",
+  "rubyLsp.formatter": "rubocop",
+  "rubyLsp.useBundler": false,
+  "search.exclude": {
+    "**/test/fixtures/prism": true
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  },
+  "workbench.activityBar.orientation": "vertical",
+  "workbench.preferredDarkColorTheme": "Default Dark Modern",
+  "workbench.colorTheme": "Default Dark Modern"
+}
