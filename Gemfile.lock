@@ -103,6 +103,9 @@ GEM
       base64
       fiber-storage
       logger
+    graphql-voyager-rails (1.0.4)
+      railties
+      sprockets-rails
     i18n (1.14.8)
       concurrent-ruby (~> 1.0)
     io-console (0.8.2)
@@ -195,6 +198,14 @@ GEM
     reline (0.6.3)
       io-console (~> 0.5)
     securerandom (0.4.1)
+    sprockets (4.2.2)
+      concurrent-ruby (~> 1.0)
+      logger
+      rack (>= 2.2.4, < 4)
+    sprockets-rails (3.5.2)
+      actionpack (>= 6.1)
+      activesupport (>= 6.1)
+      sprockets (>= 3.0.0)
     sqlite3 (1.7.3-arm64-darwin)
     stringio (3.2.0)
     thor (1.4.0)
@@ -215,6 +226,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   graphiql-rails (~> 1.10)
   graphql (~> 2.0)
+  graphql-voyager-rails (~> 1.0)
   puma (~> 6.0)
   rails (~> 7.1.0)
   sqlite3 (~> 1.7)
