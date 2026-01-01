@@ -1,5 +1,5 @@
 module Mutations
-  class BaseMutation < GraphQL::Schema::RelayClassicMutation
+  class BaseMutation < GraphQL::Schema::Mutation
     # ここに共通のロジックを追加できます
   end
 end

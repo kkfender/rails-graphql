@@ -3,10 +3,10 @@ module Types
     description "The query root of this schema"
 
     # すべてのユーザーを取得
-    field :users, [UserType], null: false, description: "すべてのユーザーを取得"
+    field :users, [Types::UserType], null: false, description: "すべてのユーザーを取得"
 
     # IDでユーザーを取得
-    field :user, UserType, null: true, description: "IDでユーザーを取得" do
+    field :user, Types::UserType, null: true, description: "IDでユーザーを取得" do
       argument :id, ID, required: true, description: "ユーザーID"
     end
 

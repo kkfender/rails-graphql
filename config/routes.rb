@@ -10,7 +10,11 @@ Rails.application.routes.draw do
 
   # GraphiQL（開発環境のみ）
   if Rails.env.development?
-    mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/graphql"
+    begin
+      mount GraphiQL::Rails::Engine, at: "/graphiql", graphql_path: "/graphql"
+    rescue NameError => e
+      Rails.logger.warn "GraphiQL could not be loaded: #{e.message}"
+    end
   end
 
   # Defines the root path route ("/")

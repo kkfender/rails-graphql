@@ -1,7 +1,4 @@
 class GraphqlController < ApplicationController
-  # CSRF保護をスキップ（APIエンドポイントの場合）
-  skip_before_action :verify_authenticity_token
-
   def execute
     variables = prepare_variables(params[:variables])
     query = params[:query]
