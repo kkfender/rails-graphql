@@ -11,3 +11,5 @@ gem "bootsnap", ">= 1.4.4", require: false
 gem "graphql", "~> 2.0"
 gem "graphiql-rails", "~> 1.10", group: :development
 gem "graphql-voyager-rails", "~> 1.0", group: :development
+
+gem "rack-cors", "~> 3.0"
